@@ -18,7 +18,7 @@ var sum = function(a, b) {
 
 
 for (var i = 0; i < operators.length; i++) {
-    
+
 }
 
 
