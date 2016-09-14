@@ -1,0 +1,37 @@
+#gallery {
+    width: 786px;
+    height: 786px;
+    padding: 10px;
+    margin: 0 auto;
+    border: 1px solid #505050;
+}
+
+#gallery li {
+    list-style: none;
+    float: left;
+    width: 250px;
+    height: 250px;
+    padding: 5px;
+    border: 1px solid #cc0000;
+}
+
+#gallery li img {
+    width: 250px;
+    height: 250px;
+}
+
+#show {
+    background: #fff;
+    width: 380px;
+    height: 380px;
+    padding: 10px;
+    border: 2px solid orangered;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: none;
+}
+#show img {
+    width: 380px;
+    height: 380px;
+}
