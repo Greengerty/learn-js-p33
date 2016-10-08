@@ -1,0 +1,47 @@
+body {
+  font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
+}
+
+.socialmediaicons ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.socialmediaicons ul li {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.socialmediaicons ul li img {
+  width: 30px;
+  border-radius: 50%;
+}
+
+
+#block {
+    width: 600px;
+    height: 600px;
+    border: 2px solid #cc0000;
+    margin: 0 auto;
+    position: relative;
+}
+
+#kv {
+    width: 60px;
+    height: 60px;
+    background: #ccc;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+
+.kv {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 140px;
+    left: 140px;
+    background: #cc0000;
+}

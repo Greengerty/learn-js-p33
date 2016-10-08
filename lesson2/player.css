@@ -1,0 +1,18 @@
+#list {
+    border: 1px solid #cc0000;
+    width: 200px;
+    background: #505050;
+    color: #fff;
+    padding: 0;
+    margin: 0 auto;
+}
+
+#list li {
+    padding: 5px 10px;
+    list-style: none;
+    border-bottom: 1px solid #fff;
+    cursor: pointer;
+}
+#list li:last-child {
+    border-bottom: none;
+}

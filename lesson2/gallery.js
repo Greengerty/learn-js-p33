@@ -2,22 +2,39 @@ var gallery = document.getElementById("gallery");
 
 var show = document.getElementById("show");
 
-gallery.onmousemove = function(e) {
+for (var i = 1; i <= 9; i++) {
+    var li = document.createElement("li");
+    var img = document.createElement("img");
+    img.src = "images/" + i + ".jpg";
+
+    li.appendChild(img);
+    gallery.appendChild(li);
+}
+
+
+gallery.addEventListener("mousemove", function(e) {
     if ( e.target.nodeName == 'IMG' ) {
+        var currentImage = null;
+
+        if(currentImage != e.target.attributes.src.nodeValue){
+            show.innerText = "";
+
+            var image = document.createElement('img');
+            currentImage = image.src = e.target.attributes.src.nodeValue;
+
+            show.appendChild(image);
+        }
+
         show.style.display = "block";
-        console.log(e)
         show.style.top = e.y + 10 + "px";
         show.style.left = e.x + 10 + "px";
-        var image = show.querySelector('img');
-        image.src = e.target.attributes.src.nodeValue;
-
     }
 
-    e.target.onmouseout = function (j) {
+    e.target.addEventListener("mouseout", function (j) {
         show.style.display = "none"
-    }
-};
+    }, false);
 
+}, false);
 
 
 /**
